@@ -1,0 +1,10 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "Client",
+      "focus": true,
+      "command": "cd Client && npm start"
+    }  
+  ]
+}

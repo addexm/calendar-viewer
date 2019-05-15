@@ -1,0 +1,35 @@
+$red: #ca3c3c; //#c75300;
+$blue: #3c64ca; //#0073c7;
+$teal: #3ccac5; //#00c5c7;
+$aqua: #3bacd3;
+$green: #8dc740; //#5dc700;
+$yellow: #edde10; //#e4d500;
+$orange: #edb42a;
+$rust: #ed8a2c;
+$grayDarkest: #111;
+$grayDarker: #222;
+$grayDark: #343a40;
+$gray: #4d4d4d;
+$grayMid: #999999;
+$grayLight: #ddd;
+$grayLighter: #eeeeee;
+$grayLightest: #efefef;
+$grayEvenLighter: #f9f9f9;
+$white: #fff;
+$black: #000;
+
+$textColor: $grayDark;
+$linkColor: darken($green, 20%);
+$mainNavColor: $gray;
+$adminNavColor: $blue;
+$selectionColor: lighten($teal, 42%);
+$destructiveSelectionColor: lighten($red, 30%);
+$activeSelectionColor: darken($selectionColor, 60%);
+$borderColor: $grayLight;
+$borderColorAlt: $grayMid;
+$hightlightGradient: repeating-linear-gradient(0,rgba(60,202,197,.035),rgba(60,202,197,.035));
+
+$toolsPanelWidth: 300px;
+$helpPanelWidth: 300px;
+
+$mainShadow: 3px 3px 10px 3px rgba(0, 0, 0, .15);

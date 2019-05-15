@@ -1,0 +1,12 @@
+{
+  "commands": [    
+    {
+      "text": "$(terminal) Client",
+      "command": "terminals.runTerminalByName",
+      "arguments": ["Client"],
+      "tooltip": "Client",
+      "color": "#60dafc",
+      "priority": -10000
+    }
+  ]
+}

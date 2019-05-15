@@ -1,0 +1,6 @@
+.mobile-only{
+    display: none;
+    @media(max-width:991px){ 
+        display: inline-block;
+    }
+}

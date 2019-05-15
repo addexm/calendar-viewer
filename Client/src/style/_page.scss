@@ -1,0 +1,43 @@
+@page {
+    size: landscape;   /* auto is the initial value */
+    margin: 12mm 10mm 10mm 10mm;  /* this affects the margin in the printer settings */
+}  
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $textColor;
+    height: 100%;
+    a {
+        color: $linkColor;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+            color: darken($linkColor, 10%);
+        }
+    }
+
+    #root{
+        height: 100vh;
+        .page-container{
+            height: 100vh;
+            padding:  0;
+            .page{
+                margin: 0;                
+                padding:  0;
+                height: 100vh;
+                .fc{
+                    box-sizing: border-box !important;
+                }
+            }           
+        }
+    }
+}
