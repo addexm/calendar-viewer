@@ -8,5 +8,6 @@ import './style/index.scss';
 
 window.EM = new EntityManager();
 (async function(){
+    await window.EM.init();
     ReactDOM.render(<App />, document.getElementById('root'));
 })();
