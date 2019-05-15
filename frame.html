@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <script type="text/javascript">
-        console.log('here');
         window.addEventListener('message', function (event) {
             console.log('message received from iframe');
             if (event.data.message === 'getWidth') {
