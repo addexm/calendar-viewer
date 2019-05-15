@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Primary Election",
+        "start": "2019-05-21",
+        "end": "2019-05-21"
+    },
+    {
+        "title": "Last day for County Boards of Elections to receive voted civilian absentee ballots",
+        "start": "2019-05-17",
+        "end": "2019-05-17"
+    },
+    {
+        "title": "First Day To Register After Primary",
+        "start": "2019-05-22",
+        "end": "2019-05-22"
+    },
+    {
+        "title": "Last day for County Boards of Elections to receive voted military and overseas absentee ballots (submitted for delivery no later than 11:59pm on May 20th)",
+        "start": "2019-05-28",
+        "end": "2019-05-28"
+    },
+    {
+        "title": "Last day to circulate and file nomination papers",
+        "start": "2019-08-01",
+        "end": "2019-08-01"
+    },
+    {
+        "title": "Last day for withdrawal by candidates nominated by nomination papers",
+        "start": "2019-08-08",
+        "end": "2019-08-08"
+    },
+    {
+        "title": "Last day for withdrawal by candidates nominated at the primary",
+        "start": "2019-08-12",
+        "end": "2019-08-12"
+    },
+    {
+        "title": "Last Day To Resgister Before November Election",
+        "start": "2019-10-07",
+        "end": "2019-10-07"
+    },
+    {
+        "title": "Last day to apply for civilian absentee ballot",
+        "start": "2019-10-29",
+        "end": "2019-10-29"
+    },
+    {
+        "title": "Last day for County Boards of Elections to receive voted civilian absentee ballots",
+        "start": "2019-11-01",
+        "end": "2019-11-01"
+    },
+    {
+        "title": "Municipal Election",
+        "start": "2019-11-05",
+        "end": "2019-11-05"
+    },
+    {
+        "title": "First day to register after the November election",
+        "start": "2019-11-06",
+        "end": "2019-11-06"
+    },
+    {
+        "title": "Last day for County Boards of Elections to receive voted military and overseas absentee ballots (submitted for delivery no later than 11:59pm on Nov 4th",
+        "start": "2019-11-12",
+        "end": "2019-11-12"
+    }
+]
