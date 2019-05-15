@@ -27,6 +27,11 @@ export default class Home extends Component {
         });        
 
         this.onClose = this.onClose.bind(this);
+        
+        this.maxWidth = window.innerWidth;
+        if (window.parent){
+            this.maxWidth = window.parent.innerWidth < this.maxWidth ? window.parent.innerWidth : this.maxWidth;
+        }
     }
 
     onClose() {
@@ -35,14 +40,14 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div key="contents" className="page page-home container-fluid">
+            <div key="contents" className="page page-home container-fluid" style={{ width: this.maxWidth - 15 }}>
                 <FullCalendar
                     defaultView="listMonth"
-                    height="parent"
+                    height={"parent"}
                     header={{
-                        left: 'prev,next today',
+                        left: this.maxWidth < 960 ? 'today': 'prev,next today',
                         center: 'title',
-                        right: 'listMonth,dayGridMonth,dayGridWeek'
+                        right: this.maxWidth < 960 ? 'prev,next' : 'listMonth,dayGridMonth,dayGridWeek'
                     }}
                     buttonText={{
                         today: 'Today',
