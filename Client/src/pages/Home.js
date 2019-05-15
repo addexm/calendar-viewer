@@ -15,7 +15,8 @@ export default class Home extends Component {
         this.dvdcId = "88nt7fbcnbvdk7q5ojngskd2rc@group.calendar.google.com";
 
         this.state = {
-            currentEvent: null
+            currentEvent: null,
+            maxWidth: window.innerWidth
         };
 
         this.electionDates = EM.electionDates.map((ed, index) => {
@@ -28,9 +29,18 @@ export default class Home extends Component {
 
         this.onClose = this.onClose.bind(this);
         
-        this.maxWidth = window.innerWidth;
-        if (window.parent){
-            this.maxWidth = window.parent.innerWidth < this.maxWidth ? window.parent.innerWidth : this.maxWidth;
+        this.calendarRef = React.createRef();
+        var self = this;
+
+        if (window.parent){            
+            console.log('sending message', window.parent);
+            window.addEventListener('message', function (event) {
+                console.log('message received from parent', event.data);
+                if (event.data.width) {
+                    self.setState({ maxWidth: event.data.width })
+                }
+            }, false);
+            window.parent.postMessage({ message: 'getWidth' }, '*');
         }
     }
 
@@ -39,15 +49,17 @@ export default class Home extends Component {
     }
 
     render() {
+        console.log(this.state.maxWidth);
         return (
-            <div key="contents" className="page page-home container-fluid" style={{ width: this.maxWidth - 15 }}>
+            <div key="contents" className="page page-home container-fluid" style={{ width: this.state.maxWidth - 20 }}>
                 <FullCalendar
+                    ref={this.calendarRef} 
                     defaultView="listMonth"
                     height={"parent"}
                     header={{
-                        left: this.maxWidth < 960 ? 'today': 'prev,next today',
+                        left: this.state.maxWidth < 960 ? 'today': 'prev,next today',
                         center: 'title',
-                        right: this.maxWidth < 960 ? 'prev,next' : 'listMonth,dayGridMonth,dayGridWeek'
+                        right: this.state.maxWidth < 960 ? 'prev,next' : 'listMonth,dayGridMonth,dayGridWeek'
                     }}
                     buttonText={{
                         today: 'Today',

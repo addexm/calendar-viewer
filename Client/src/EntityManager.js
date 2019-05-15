@@ -1,11 +1,7 @@
 import CSV from './util/CSV';
-import Dates from './util/Dates';
-const { DateTime, Settings } = require("luxon");
+const { DateTime } = require("luxon");
 
 export default class EntityManager{ 
-    constructor(){        
-    }
-
     async init(){
         this.qs = this.getQsParams();
     
