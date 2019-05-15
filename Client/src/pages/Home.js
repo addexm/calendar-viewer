@@ -19,11 +19,11 @@ export default class Home extends Component {
         };
 
         this.electionDates = EM.electionDates.map((ed, index) => {
-            return Object.assign({}, ed, { color: 'red', id: 'e' + index });
+            return Object.assign({}, ed, { color: '#d03b3b', id: 'e' + index, className: 'election' });
         });
 
         this.holidays = EM.holidays.map((holiday, index) => {
-            return Object.assign({}, holiday, { color: '#ccc', id: 'h' + index });
+            return Object.assign({}, holiday, { color: '#ccc', id: 'h' + index, className: 'holiday' });
         });        
 
         this.onClose = this.onClose.bind(this);

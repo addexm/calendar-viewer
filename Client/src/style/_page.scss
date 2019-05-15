@@ -36,6 +36,11 @@ body {
                 height: 100vh;
                 .fc{
                     box-sizing: border-box !important;
+                    .fc-list-item.holiday{
+                        .fc-event-dot{
+                            //visibility: hidden;
+                        }
+                    }
                 }
             }           
         }
